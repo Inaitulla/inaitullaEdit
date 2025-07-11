@@ -7,136 +7,99 @@
   <link rel="icon" href="https://www.facebook.com/share/1CYuHSjqt8/" type="image/png" />
   <style>
     :root {
-      --red: #ff0000;
-      --black: #000000;
-      --blue: #0000ff;
+      --bg-dark: #121212;
+      --text-light: #f5f5f5;
+      --primary-blue: #00bfff;
+      --highlight-aqua: #00fff7;
     }
-
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
-      background-color: var(--black);
-      color: white;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
       line-height: 1.6;
     }
-
     header {
-      background: linear-gradient(90deg, var(--red), var(--black) 45%, var(--blue));
+      background: linear-gradient(90deg, var(--primary-blue), #0a0a0a);
       padding: 30px 20px;
       text-align: center;
     }
-
     header img.logo {
       width: 100px;
       height: auto;
       border-radius: 50%;
       margin-bottom: 10px;
     }
-
     header h1 {
       margin: 0;
       font-size: 2.8rem;
+      color: var(--highlight-aqua);
       letter-spacing: 1px;
     }
-
     header p {
       margin: 8px 0 0;
       font-size: 1.05rem;
       opacity: 0.9;
     }
-
     section {
       padding: 50px 20px;
       max-width: 1100px;
       margin: auto;
     }
-
     h2 {
       margin-top: 0;
       font-size: 2rem;
-      border-left: 6px solid var(--red);
+      border-left: 6px solid var(--primary-blue);
       padding-left: 14px;
-      color: var(--blue);
+      color: var(--highlight-aqua);
     }
-
-    .about p {
-      font-size: 1.05rem;
-      margin: 10px 0 0;
-    }
-
-    .service-box {
-      background: #111;
+    .service-box, .order-box, .portfolio-item {
+      background: #1e1e1e;
       margin: 24px 0;
       padding: 24px;
+      border-left: 4px solid var(--primary-blue);
       border-radius: 12px;
-      border-left: 4px solid var(--red);
       transition: transform 0.2s ease;
     }
-
-    .service-box:hover {
+    .service-box:hover, .order-box:hover {
       transform: translateY(-4px);
     }
-
-    .service-box h3 {
+    .service-box h3, .order-box h3 {
       margin: 0 0 6px;
       font-size: 1.3rem;
-      color: var(--red);
+      color: var(--primary-blue);
     }
-
-    .service-box p {
+    .service-box p, .order-box p {
       margin: 0;
       font-size: 0.97rem;
     }
-
-    .portfolio-item {
-      background: #111;
-      margin: 24px 0;
-      padding: 20px;
-      border-left: 4px solid var(--red);
-      border-radius: 12px;
-    }
-
     .social-list {
       list-style-type: none;
       margin: 0;
       padding: 0;
     }
-
     .social-list li {
       margin: 12px 0;
       font-size: 1rem;
     }
-
     .gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
       margin-top: 20px;
     }
-
     .gallery img {
       width: 100%;
       max-width: 300px;
       border-radius: 10px;
     }
-
     a {
-      color: #0af;
+      color: var(--highlight-aqua);
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
-    .order-box {
-      background: #111;
-      margin: 24px 0;
-      padding: 24px;
-      border-left: 4px solid var(--blue);
-      border-radius: 12px;
-    }
-
     footer {
       text-align: center;
       padding: 24px;
@@ -155,33 +118,20 @@
 
   <section class="about">
     <h2>About Me</h2>
-    <p>
-      Hello! I'm <strong>Inaitulla</strong>, a passionate photo &amp; video editor based in India. I specialise in cinematic
-      reels, eye‑catching thumbnails, dynamic VFX, and custom edits that help creators &amp; brands stand out online.
-      With years of experience and a keen eye for detail, I transform raw footage into scroll‑stopping stories.
-    </p>
+    <p>Hello! I'm <strong>Inaitulla</strong>, a passionate photo & video editor based in India...</p>
   </section>
 
   <section class="services">
     <h2>Services</h2>
-    <div class="service-box">
-      <h3>🎬 Reels Editing</h3>
-      <p>High‑quality Instagram reels featuring seamless transitions, on‑beat cuts, and engaging visual effects.</p>
-    </div>
-    <div class="service-box">
-      <h3>🖼️ Thumbnail Design</h3>
-      <p>Eye‑catching YouTube &amp; Instagram thumbnails tailored to your brand identity.</p>
-    </div>
-    <div class="service-box">
-      <h3>⚡ VFX &amp; Color Grading</h3>
-      <p>Custom visual effects, motion graphics, and cinematic colour correction for professional‑grade videos.</p>
-    </div>
+    <div class="service-box"><h3>🎬 Reels Editing</h3><p>High‑quality Instagram reels featuring seamless transitions...</p></div>
+    <div class="service-box"><h3>🖼️ Thumbnail Design</h3><p>Eye‑catching YouTube & Instagram thumbnails...</p></div>
+    <div class="service-box"><h3>⚡ VFX & Color Grading</h3><p>Custom visual effects and cinematic colour correction...</p></div>
   </section>
 
   <section class="portfolio">
     <h2>Portfolio</h2>
     <div class="portfolio-item">
-      <p>👉 Explore my latest edits on <a href="https://www.instagram.com/inaitulla.edit" target="_blank">Instagram (@inaitulla.edit)</a></p>
+      <p>👉 Explore my latest edits on <a href="https://www.instagram.com/inaitulla.edit" target="_blank">Instagram</a></p>
     </div>
     <div class="portfolio-item">
       <p>📺 Watch featured videos on my <a href="https://youtube.com/@islamicshortlite?si=BNUYmty-EYLJ1pn4" target="_blank">YouTube channel</a></p>
@@ -189,7 +139,7 @@
   </section>
 
   <section class="contact">
-    <h2>Contact &amp; Social</h2>
+    <h2>Contact & Social</h2>
     <ul class="social-list">
       <li>Email: <a href="mailto:inaitulla2006@gmail.com">inaitulla2006@gmail.com</a></li>
       <li>Instagram: <a href="https://instagram.com/inaitulla.edit" target="_blank">@inaitulla.edit</a></li>
@@ -200,21 +150,11 @@
 
   <section class="order">
     <h2>Order & Pricing</h2>
-    <div class="order-box">
-      <p>📸 <strong>Photo Editing</strong> – ₹50 per image</p>
-    </div>
-    <div class="order-box">
-      <p>🎞️ <strong>Normal Video Editing (up to 30 seconds)</strong> – ₹200</p>
-    </div>
-    <div class="order-box">
-      <p>⏱️ <strong>Advanced Editing (more than 30 seconds)</strong> – Starts from ₹200+</p>
-    </div>
-    <div class="order-box">
-      <p>🖼️ <strong>YouTube Thumbnail Editing</strong> – ₹100 per thumbnail</p>
-    </div>
-    <div class="order-box">
-      <p>📥 To place an order, message me on <a href="https://wa.me/your-number">WhatsApp</a> or DM on <a href="https://www.instagram.com/inaitulla.edit" target="_blank">Instagram</a>.</p>
-    </div>
+    <div class="order-box"><p>📸 <strong>Photo Editing</strong> – ₹50 per image</p></div>
+    <div class="order-box"><p>🎞️ <strong>Normal Video Editing (30 sec)</strong> – ₹200</p></div>
+    <div class="order-box"><p>⏱️ <strong>Long Edits (more than 30 sec)</strong> – from ₹200+</p></div>
+    <div class="order-box"><p>🖼️ <strong>Thumbnail Editing</strong> – ₹100 per piece</p></div>
+    <div class="order-box"><p>📥 Message on <a href="https://wa.me/your-number">WhatsApp</a> or <a href="https://www.instagram.com/inaitulla.edit" target="_blank">Instagram</a> to order</p></div>
   </section>
 
   <section class="gallery">
@@ -228,8 +168,6 @@
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 inaitullaEdit. All rights reserved.</p>
-  </footer>
+  <footer><p>&copy; 2025 inaitullaEdit. All rights reserved.</p></footer>
 </body>
 </html>
